@@ -32,5 +32,7 @@ function animate() {
     cube.rotation.x += 0.005;
     cube.rotation.y += 0.005;
     cube.rotation.z += 0.005;
+
+    cube.position.y = Math.sin(cube.rotation.y);
 }
 animate();
